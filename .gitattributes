@@ -2,3 +2,4 @@ Assets/Sounds/* filter=lfs diff=lfs merge=lfs -text
 Assets/Images/* filter=lfs diff=lfs merge=lfs -text
 Assets/PolygonTown/* filter=lfs diff=lfs merge=lfs -text
 Assets/PolygonZombie/* filter=lfs diff=lfs merge=lfs -text
+Assets/Animations/**/*.fbx filter=lfs diff=lfs merge=lfs -text
