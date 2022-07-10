@@ -1,0 +1,8 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement name="VisualElement" style="flex-grow: 1; align-items: center; justify-content: flex-start;">
+        <ui:Label text="Poly Evil" display-tooltip-when-elided="true" style="-unity-font-definition: none; -unity-font: url(&apos;project://database/Assets/Fonts/Another%20Danger%20-%20Demo.otf?fileID=12800000&amp;guid=7f1e26daaeab7824dbb1c67aae8bdde3&amp;type=3#Another Danger - Demo&apos;); font-size: 150px; color: rgb(190, 51, 51);" />
+        <ui:VisualElement style="flex-grow: 5;">
+            <ui:Label text="Start" display-tooltip-when-elided="true" name="StartButton" style="font-size: 64px; -unity-text-align: upper-center; transition-timing-function: ease-out; transition-duration: 0.3s; -unity-font: url(&apos;project://database/Assets/Fonts/Another%20Danger%20-%20Demo.otf?fileID=12800000&amp;guid=7f1e26daaeab7824dbb1c67aae8bdde3&amp;type=3#Another Danger - Demo&apos;); -unity-font-definition: none; flex-grow: 0; flex-shrink: 1;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
