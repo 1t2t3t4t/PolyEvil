@@ -1,5 +1,6 @@
 ﻿using System;
 using Cinemachine;
+using UnityEditor;
 using UnityEngine;
 
 public class FixedCameraController : MonoBehaviour
@@ -8,11 +9,13 @@ public class FixedCameraController : MonoBehaviour
     
     private CinemachineBrain _cinemachineBrain;
     private CinemachineVirtualCamera _virtualCamera;
+    private Collider _collider;
 
     private void Start()
     {
         _cinemachineBrain = FindObjectOfType<CinemachineBrain>();
         _virtualCamera = GetComponentInChildren<CinemachineVirtualCamera>();
+        _collider = GetComponent<Collider>();
     }
 
     private void OnTriggerEnter(Collider other)
@@ -30,5 +33,16 @@ public class FixedCameraController : MonoBehaviour
         {
             _virtualCamera.enabled = false;
         }
+    }
+}
+
+public static class FixedCameraControllerGizmos
+{
+    [DrawGizmo(GizmoType.NotInSelectionHierarchy | GizmoType.NonSelected)]
+    public static void DrawGizmos(FixedCameraController controller, GizmoType type)
+    {
+        var bounds = controller.GetComponent<Collider>().bounds;
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireCube(bounds.center, bounds.size);
     }
 }
