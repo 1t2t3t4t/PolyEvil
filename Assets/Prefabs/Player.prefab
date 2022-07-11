@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 579923926}
   - component: {fileID: 579923927}
   m_Layer: 0
-  m_Name: DebugCam
+  m_Name: 3rdPersonCam
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
 
 namespace UI
@@ -51,7 +52,7 @@ namespace UI
 
         private void OnButtonClicked(VisualElement btn, ClickEvent evt)
         {
-            
+            SceneManager.LoadScene("EntraceScene");
         }
     }
 }
